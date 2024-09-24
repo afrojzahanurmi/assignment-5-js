@@ -5,4 +5,6 @@ showSectionByid('Donate-section');
 
 document.getElementById('history-button').addEventListener('click', function(){
     showSectionByid('history-section');
-    })
+    }) 
+
+    

@@ -20,9 +20,15 @@ document.getElementById(id).classList.remove('hidden')
 }
 
 
+function buttonBgColor(event){
+    event.classList.add('bg-[#B4F461]');
+}
+
+
     
 document.getElementById('home-btn').addEventListener('click', function(){
     window.location.href='index.html';
-    console.log("button clicked");
+    
     
 })
+

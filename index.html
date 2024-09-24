@@ -9,8 +9,8 @@
 <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body>
-    <header class=" bg-[#F9F7F3] lg:h-32 px-5 lg:px-32 lg:py-5">
+<body class="pt-20">
+    <header class=" bg-[#F9F7F3] lg:h-32 px-5 lg:px-32 lg:py-5 fixed z-10 top-0 w-full">
        <nav>
       <div class="    flex  justify-between gap-5">
         <div><button id="blog-btn" class="btn  lg:btn-lg text-2xl bg-[#B4F461] mt-5 lg:mt-0">Blog</button></div>
@@ -26,11 +26,11 @@
        </nav>
     </header>
 
-    <main>
-      <section class="w-10/12 m-auto mt-20 text-center">
+    <main> 
+      <section class="w-10/12 m-auto mt-20 text-center ">
         <div>
-        <button id="donate-button" class="btn  lg:btn-lg text-2xl bg-[#B4F461] mr-3">Donation</button>
-    <button id="history-button" class="btn  lg:btn-lg text-2xl bg-white">History</button>
+        <button id="donate-button" onclick="buttonBgColor(this)" class="btn  lg:btn-lg text-2xl  mr-3">Donation</button>
+    <button id="history-button"  class="btn  lg:btn-lg text-2xl bg-white">History</button>
     
     </div></section>
        <section id="Donate-section" class="w-10/12 m-auto mt-10 text-center mb-20">
@@ -50,8 +50,18 @@
                       Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. 
                       Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
                     </p>
-                    <input id="Donate-amount-noa" type="text" placeholder="Write Donation Amount" class="w-full h-12 mb-5 px-5 rounded-xl text-black border">
-                    <button id="donate-btn-noa" class="btn btn-block bg-[#B4F461] text-2xl ">Donate Now</button>
+                    <input id="Donate-amount-noa" type="text" placeholder="Write Donation Amount" 
+                    class="w-full h-12 mb-5 px-5 rounded-xl text-black border">
+                   <div>
+                    <button id="donate-btn-noa"  class="btn btn-block bg-[#B4F461] text-2xl ">Donate Now</button>
+                    <div id="popup" class="w-3/12 bg-white rounded-sm absolute top-1/2 left-1/2 text-center items-center m-auto hidden">
+                      <h1 class="text-4xl mt-5 mb-5 font-semibold">Congrates!</h1>
+                      <img class="mx-56" src="assets/coin.png" alt="">
+                      <p class="text-xl mb-5">You have donated for humankind</p>
+                      <h2 class="text-2xl font-medium mb-5">Successfully</h2>
+                      <button id="popup-btn"  class="btn  lg:btn-lg   mt-5 lg:mt-0 mb-5">Close confirmation</button>
+                    </div>
+                   </div>
 
 
 
@@ -81,7 +91,7 @@
               </div>
         </div>
 
-        <div class="mt-10"></div>
+        <div class="mt-10">
             <div class="hero  ">
                 <div class=" hero-content flex-col lg:flex-row gap-10 bg-gray-100 rounded-xl">
                   <img class="w-full" src="assets/quota-protest.png" alt="">
@@ -118,5 +128,6 @@
   <script src="js/index.js"></script>
   <script src="js/hidden.js"></script>
   <script src="js/blog.js"></script>
+  <script src="js/popup.js"></script>
 </body>
 </html>
