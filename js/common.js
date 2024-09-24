@@ -19,3 +19,6 @@ document.getElementById(id).classList.remove('hidden')
 
 }
 
+
+    const presentTime = new Date();
+  
