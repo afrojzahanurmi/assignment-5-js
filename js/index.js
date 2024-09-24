@@ -19,7 +19,7 @@ document.getElementById('donate-btn-noa').addEventListener('click', function(eve
 
 
 //    added history part
-const presentTime = new Date(12);
+const presentTime = new Date();
 
 const div = document.createElement('div');
 

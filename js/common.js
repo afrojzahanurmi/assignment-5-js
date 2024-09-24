@@ -20,5 +20,9 @@ document.getElementById(id).classList.remove('hidden')
 }
 
 
-    const presentTime = new Date();
-  
+    
+document.getElementById('home-btn').addEventListener('click', function(){
+    window.location.href='index.html';
+    console.log("button clicked");
+    
+})
